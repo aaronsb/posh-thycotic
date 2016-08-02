@@ -1,0 +1,18 @@
+<Root ServiceImplementation="YourCompany" APIVersion="8.9.000022">
+	<Server Role="Corp">
+		<DNSHostName>thycotic.mydomain.com</DNSHostName>
+		<Host>thycotic</Host>
+		<Protocol>HTTPS</Protocol>
+		<WSDL>/SecretServer/webservices/SSWebservice.asmx?wsdl</WSDL>
+		<SSUserDomains>
+			<Domain Name="Local">
+				<Primary>false</Primary>
+				<WindowsDomain>local</WindowsDomain>
+			</Domain>
+			<Domain Name="YourCompany Root Domain">
+				<Primary>true</Primary>
+				<WindowsDomain>DOMAIN</WindowsDomain>
+			</Domain>
+		</SSUserDomains>
+	</Server>
+</Root>
